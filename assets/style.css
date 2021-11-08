@@ -40,13 +40,16 @@ p{
     font-weight:300;
     line-height:24px;
 }
-.colorw{
+.welcome{
     color:white;
+    font-size:20px;
+    font-weight:300;
+    line-height:30px;
 }
 /* Header 
 ============================*/
 header {
-    background-image: url(paysage3.jpg);
+    background-image: url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
