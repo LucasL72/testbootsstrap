@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-h1, h2,h3 {
+h1,h2,h3,h4 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -44,14 +44,17 @@ p{
     color:white;
     font-size:20px;
     font-weight:300;
-    line-height:30px;
+    line-height:20px;}
+section{
+    padding:20px;
 }
 /* Header 
 ============================*/
 header {
-    background-image: url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
+    background-image:linear-gradient(rgba(10,240,149,0.4) , rgba(0,212,255,0.6)), url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -109,3 +112,73 @@ header {
     transition: all 1s;
 
 }
+/* Famille
+============================*/
+.famille-prod{
+    background-color: rgb(180, 255, 180);
+}
+.famille-details{
+    background-color: #fff;
+    background-image: linear-gradient(rgb(109, 219, 6) , rgba(0,212,255));
+    padding : 40px 30px;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+.famille-details img {
+    display:block;
+    margin:0 auto;
+    width:100%;
+}
+.famille-details h4{
+    text-align:center;
+}
+/* Galerie 
+============================*/
+.galeries-img{
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0,0,0,1);
+    margin-bottom: 20px;
+}
+.galeries-title h4{
+    color: rgb(255, 255, 255);
+}
+/* Avis clients
+============================*/
+.clients {
+    background-image:linear-gradient(90deg, rgba(2,0,36,0.6), rgba(129,129,129,0.9556197478991597), rgb(145, 245, 106,0.3)), url(paysage5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clients h2{
+    color: rgb(0, 0, 0);
+}
+.clients h2::after{
+    background-color: #fff;
+}
+blockquote{
+    padding:5px;
+    line-height: 130%;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+blockquote:before{
+    content:"\201C";
+    font-size:800%;  
+}
+cite{
+    display: block ;
+    font-size: 80%;
+    margin-top: 20px;
+    
+}
+cite img{
+    height:50px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
