@@ -1,2 +1,2 @@
-# testbootsstrap
+# test bootstrap
 test bootstrap
