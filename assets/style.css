@@ -1,57 +1,65 @@
 /* Global 
 ============================*/
-body {
-    margin: 0;
-    padding: 0;
-}
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: 300;
     word-spacing: 8px;
 }
-h1{
+
+h1 {
     color: rgb(154, 230, 4);
 
 }
-h2{
-    color:rgb(0, 0, 0);
+
+h2 {
+    color: rgb(0, 0, 0);
     font-size: 250%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
-h2:after{
+
+h2:after {
     display: block;
     height: 2px;
     background-color: green;
     width: 100px;
-    content:"";
-    margin:0 auto;
-    margin-top:10px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
 }
-h3{
-    font-size:160%;
+
+h3 {
+    font-size: 160%;
 }
-p{
-    font-size:12px;
-    font-weight:300;
-    line-height:24px;
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
 }
-.welcome{
-    color:white;
-    font-size:20px;
-    font-weight:300;
-    line-height:20px;}
-section{
-    padding:20px;
+
+.welcome {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
 }
+
+section {
+    padding: 20px;
+}
+
 /* Header 
 ============================*/
 header {
-    background-image:linear-gradient(rgba(10,240,149,0.4) , rgba(0,212,255,0.6)), url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
+    background-image: linear-gradient(rgba(10, 240, 149, 0.4), rgba(0, 212, 255, 0.6)), url(https://diapogram.com/_data/i/upload/2019/04/11/20190411234429-79e7caa4-me.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -62,9 +70,11 @@ header {
     position: absolute;
     top: 30%;
 }
-.home-title h1{
+
+.home-title h1 {
     font-size: 340%;
 }
+
 /* Effet machine à écrire 
 ============================*/
 
@@ -72,6 +82,7 @@ header {
     display: flex;
     justify-content: flex-start;
 }
+
 .typewriter p {
     font-size: 20px;
     font-weight: lighter;
@@ -80,6 +91,7 @@ header {
     position: relative;
     animation: typing 3.5s steps(26);
 }
+
 .typewriter p::after {
     content: "";
     position: absolute;
@@ -93,135 +105,259 @@ header {
 }
 
 @keyframes typing {
-    from {width:0}
-    to {width: 100%;}
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes cursor {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 /* Header Boutons
 ============================*/
-.btn{
+.btn {
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 1s, color 1s, border 1s;
 }
-.btn-full{
+
+.btn-full {
     background-color: azure;
     color: #5ee077;
     margin-right: 15px;
 }
-.btn-ghost{
+
+.btn-ghost {
     border: 1px solid #fff;
     color: #fff;
 }
+
 .btn-full:hover {
     background-color: #5ee077;
-    color:#fff;
-}
-.btn-ghost:hover{
-    background-color: #5ee077;
-    border:1px solid #5ee077;
     color: #fff;
 }
+
+.btn-ghost:hover {
+    background-color: #5ee077;
+    border: 1px solid #5ee077;
+    color: #fff;
+}
+
 /* Produits 
 ============================*/
-.produits-plus{
-    margin:20px 0;
+.produits-plus {
+    margin: 20px 0;
 }
-.produits-plus:hover .produits-icon{
-    color:rgb(14, 112, 1);
+
+.produits-plus:hover .produits-icon {
+    color: rgb(14, 112, 1);
     transform: translateX(20px);
 }
-.produit-img{
+
+.produit-img {
     max-width: 100%;
     height: auto;
 
 }
-.produits-icon{
+
+.produits-icon {
     font-size: 34px;
     color: rgb(4, 184, 4);
     transition: all 1s;
 
 }
+
 /* Famille
 ============================*/
-.famille-prod{
+.famille-prod {
     background-color: rgb(180, 255, 180);
 }
-.famille-details{
+
+.famille-details {
     background-color: #fff;
-    background-image: linear-gradient(rgb(109, 219, 6) , rgba(0,212,255));
-    padding : 40px 30px;
+    background-image: linear-gradient(rgba(219, 168, 59, 0.5), rgba(0, 212, 255,0.5));
+    padding: 40px 30px;
     border-radius: 10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .famille-details img {
-    display:block;
-    margin:0 auto;
-    width:100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
-.famille-details h4{
-    text-align:center;
+
+.famille-details h4 {
+    text-align: center;
 }
+
 /* Galerie 
 ============================*/
-.galeries-img{
+.galeries-img {
     display: block;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     height: 300px;
     border-radius: 10px;
-    box-shadow:0 0 10px rgba(0,0,0,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     margin-bottom: 20px;
 }
-.galeries-title h4{
+
+.galeries-title h4 {
     color: rgb(255, 255, 255);
+    position: relative;
+    left: 40px;
 }
+
 /* Avis clients
 ============================*/
 .clients {
-    background-image:linear-gradient(90deg, rgba(2,0,36,0.6), rgba(129,129,129,0.7), rgb(145, 245, 106,0.3)), url(paysage5.jpg);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)), url(paysage5.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-.clients h2{
+
+.clients h2 {
     color: rgb(255, 255, 255);
 }
-.clients h2::after{
+
+.clients h2::after {
     background-color: #fff;
 }
-blockquote{
-    padding:5px;
+
+blockquote {
+    padding: 5px;
     line-height: 130%;
     font-style: italic;
     color: rgb(255, 255, 255);
 }
-blockquote:before{
-    content:"\201C";
-    font-size:800%;  
-}
-cite{
-    display: block ;
-    font-size: 80%;
-    margin-top: 20px;
-    
-}
-cite img{
-    height:50px;
-    border-radius: 50%;
-    margin-right:10px;
+
+blockquote:before {
+    content: "\201D";
+    font-size: 700%;
+    position: relative;
+    top: 40px;
+    left: 3px;
+    color: rgba(255, 255, 255, 0.6)
 }
 
+cite {
+    display: block;
+    font-size: 80%;
+    margin-top: 20px;
+
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Packs
+============================*/
+.pack {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.pack h3 {
+    color: rgb(63, 206, 44);
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.pack-premium {
+    background-color: rgb(87, 128, 87);
+    color: honeydew;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #8f8080;
+}
+
+/*.pack-title-premium{
+    font-size:14px;
+    text-align: center;
+    font-weight:400;
+    position:absolute;
+    top:10px;
+    right:30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 5px;
+}
+*/
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+    background-color: rgb(19, 146, 19);
+    color: #fff
+}
+
+.btn-pack {
+    background-color: rgb(39, 34, 34);
+    color: rgb(250, 250, 250);
+    margin-bottom: 20px;
+}
+
+/* contact
+============================*/
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: rgb(43, 204, 3);
+    color: #fff;
+}
