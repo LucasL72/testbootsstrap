@@ -1,9 +1,6 @@
 /* Global 
 ============================*/
-html{
-    margin: 0;
-    padding: 0;
-}
+
 h1,
 h2,
 h3,
@@ -54,11 +51,9 @@ p {
     font-weight: 300;
     line-height: 20px;
 }
-
-section {
-    padding: 20px;
+section{
+    padding:0px 0px 20px 0px;
 }
-
 /* Header 
 ============================*/
 header {
@@ -80,7 +75,6 @@ header {
 
 /* Effet machine à écrire 
 ============================*/
-
 .typewriter-container {
     display: flex;
     justify-content: flex-start;
@@ -104,7 +98,6 @@ header {
     background: #fff;
     right: 0;
     top: 0;
-    animation: cursor 1s infinite;
 }
 
 @keyframes typing {
@@ -195,7 +188,7 @@ header {
 
 .famille-details {
     background-color: #fff;
-    background-image: linear-gradient(rgba(219, 168, 59, 0.5), rgba(0, 212, 255,0.5));
+    background-image: linear-gradient(rgba(219, 168, 59, 0.5), rgba(0, 212, 255, 0.5));
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -235,6 +228,7 @@ header {
 .clients {
     background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.6), rgba(129, 129, 129, 0.7), rgba(90, 189, 52, 0.3)), url(paysage5.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -247,7 +241,6 @@ header {
 }
 
 blockquote {
-    padding: 5px;
     line-height: 130%;
     font-style: italic;
     color: rgb(255, 255, 255);
@@ -351,17 +344,35 @@ cite img {
     background-color: rgb(43, 204, 3);
     color: #fff;
 }
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Footer
 ============================*/
-footer{
-    background-color:rgb(0,0,0);
-    color:#fff;
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
     height: 60px;
     padding: 20px 20px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
 }
-.copyright a{
+
+.copyright a {
     color: #fff;
 }
